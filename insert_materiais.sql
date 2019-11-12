@@ -1,20 +1,20 @@
 INSERT INTO materiais
-    (produto_id, descricao, produto_qtd)
+    (descricao, unidade)
 VALUES 
-    (1, 'Café 1' , 1);
+    ('Café L1', 'g');
 
 INSERT INTO materiais
-    (produto_id, descricao, produto_qtd)
+    (descricao, unidade)
 VALUES 
-    (1, 'Café 2' , 1);
+    ('Café L2', 'g');
 
 INSERT INTO materiais
-    (produto_id, descricao, produto_qtd)
+    (descricao, unidade)
 VALUES 
-    (1, 'Moedor' , 1);
+    ('Moedor', 'un');
     
 INSERT INTO materiais
-    (produto_id, descricao, produto_qtd)
+    (descricao, unidade)
 VALUES 
-    (1, 'Eco capsula' , 3);
+    ('Eco capsula', 'un');
 

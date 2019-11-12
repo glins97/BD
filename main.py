@@ -10,14 +10,28 @@ conn = mysql.connector.connect(
 )
 c = conn.cursor()
 
-for sql in ['drop.sql', 'create.sql', 'insert_clientes.sql', 'insert_materiais.sql']:
+files = [
+    'drop.sql',
+    'create.sql',
+    'insert_clientes.sql',
+    'insert_produtos.sql',
+    'insert_subprodutos.sql',
+    'insert_materiais.sql',
+    'insert_materiais_v_produtos.sql',
+]
+
+for sql in files:
     with open(sql) as fd:
+        failed = False
         for query in fd.read().split(';'):
             if query.strip() == '': continue
             try:
                 c.execute(query + ';')
                 conn.commit()
-            except:
-                print('FAILED', query)
+            except Exception as e:
+                failed = True
+                print('[FAILED]::{}\n{}'.format(sql, e))
+        if not failed:
+            print('[SUCCESS]::{}'.format(sql))
 
 conn.close()

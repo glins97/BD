@@ -1,3 +1,5 @@
+DROP TABLE subprodutos;
+DROP TABLE materiais_v_produtos;
 DROP TABLE subvendas;
 DROP TABLE vendas;
 DROP TABLE pontos_venda;
