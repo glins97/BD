@@ -5,7 +5,7 @@ conn = sqlite3.connect('database.db')
 
 c = conn.cursor()
 
-for sql in ['drop.sql', 'create.sql', 'insert.sql']:
+for sql in ['drop.sql', 'create.sql', 'insert_clientes.sql']:
     with open(sql) as fd:
         for query in fd.read().split(';'):
             try:
