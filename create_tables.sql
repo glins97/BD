@@ -5,18 +5,18 @@ CREATE TABLE produtos(
     PRIMARY KEY (produto_id)
 );
 
-CREATE TABLE pecas(
-    peca_id int(16) NOT NULL,
+CREATE TABLE materiais(
+    material_id int(16) NOT NULL,
     produto_id int(16) NOT NULL,
-    PRIMARY KEY (peca_id),
+    PRIMARY KEY (material_id),
     FOREIGN KEY (produto_id) REFERENCES produtos(produto_id)
 );
 
 CREATE TABLE estoques(
-    peca_id int(16) NOT NULL,
+    material_id int(16) NOT NULL,
     quantidade int(16) NOT NULL,
-    PRIMARY KEY (peca_id),
-    FOREIGN KEY (peca_id) REFERENCES pecas(peca_id)
+    PRIMARY KEY (material_id),
+    FOREIGN KEY (material_id) REFERENCES materiais(material_id)
 );
 
 CREATE TABLE pontos_venda(

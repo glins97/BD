@@ -1,5 +1,5 @@
 DROP TABLE estoques;
-DROP TABLE pecas;
+DROP TABLE materiais;
 DROP TABLE vendas;
 DROP TABLE produtos;
 DROP TABLE items;
