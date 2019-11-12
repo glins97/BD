@@ -22,16 +22,16 @@ CREATE TABLE estoques(
 
 CREATE TABLE pontos_venda(
     ponto_venda_id int(16) NOT NULL,
-    nome varchar(14) NOT NULL,
+    nome varchar(140) NOT NULL,
     endereco varchar(140) NOT NULL,
     PRIMARY KEY (ponto_venda_id)
 );
 
 CREATE TABLE clientes(
-    cpf varchar(14) NOT NULL,
+    cpf char(14) NOT NULL,
     nome varchar(140) NOT NULL,
     email varchar(140),
-    telefone varchar(140),
+    telefone char(140),
     endereco varchar(140),
     PRIMARY KEY (cpf)
 );
@@ -40,13 +40,13 @@ CREATE TABLE vendas(
     venda_id int(16) NOT NULL,
     valor_total float(32) NOT NULL,
     ponto_venda_id int(16) NOT NULL,
-    cpf varchar(14) NOT NULL,
+    cpf char(14) NOT NULL,
     PRIMARY KEY (venda_id),
     FOREIGN KEY (ponto_venda_id) REFERENCES pontos_venda(ponto_venda_id),
     FOREIGN KEY (cpf) REFERENCES clientes(cpf)
 );
 
-CREATE TABLE subvenda(
+CREATE TABLE subvendas(
     subvenda_id int(16) NOT NULL,
     valor_total float(32) NOT NULL,
     produto_id int(16) NOT NULL,
