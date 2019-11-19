@@ -1,20 +1,20 @@
 INSERT INTO materiais
-    (descricao, unidade)
+    (descricao)
 VALUES 
-    ('Café L1', 'g');
+    ('Café L1');
 
 INSERT INTO materiais
-    (descricao, unidade)
+    (descricao)
 VALUES 
-    ('Café L2', 'g');
+    ('Café L2');
 
 INSERT INTO materiais
-    (descricao, unidade)
+    (descricao)
 VALUES 
-    ('Moedor', 'un');
+    ('Moedor');
     
 INSERT INTO materiais
-    (descricao, unidade)
+    (descricao)
 VALUES 
-    ('Eco capsula', 'un');
+    ('Eco capsula');
 

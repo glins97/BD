@@ -2,7 +2,6 @@ CREATE TABLE produtos(
     produto_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome varchar(140) NOT NULL,
     descricao varchar(140) NOT NULL,
-    unidade varchar(140) NOT NULL,
     valor float(32) NOT NULL
 );
 
@@ -18,7 +17,6 @@ CREATE TABLE subprodutos(
 CREATE TABLE materiais(
     material_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     descricao varchar(140) NOT NULL,
-    unidade varchar(140) NOT NULL
 );
 
 CREATE TABLE materiais_v_produtos(
