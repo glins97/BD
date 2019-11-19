@@ -28,5 +28,5 @@ WHERE telefone = '00 00000000'
 -- Atualizar enderço do cliente
 UPDATE clientes
 SET enderço = 'endereço1'
-WHERE enderço = 'enderço'
+WHERE enderço = 'endereço'
 
