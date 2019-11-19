@@ -18,6 +18,7 @@ files = [
     'insert_subprodutos.sql',
     'insert_materiais.sql',
     'insert_materiais_v_produtos.sql',
+    'insert_estoque.sql',
 ]
 
 for sql in files:
