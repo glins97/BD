@@ -13,7 +13,7 @@ WHERE cpf = '000.000.000-00'
 -- Atualizar nome do cliente
 UPDATE clientes
 SET nome = 'NOME1'
-WHERE nome = 'NOME2'
+WHERE nome = 'NOME'
 
 -- Atualizar email do cliente
 UPDATE clientes
@@ -22,8 +22,8 @@ WHERE email = 'email@globomail.com'
 
 -- Atualizar telefone do cliente
 UPDATE clientes
-SET telefone = '00 00000000'
-WHERE telefone = '00 00000001'
+SET telefone = '00 00000001'
+WHERE telefone = '00 00000000'
 
 -- Atualizar enderço do cliente
 UPDATE clientes
