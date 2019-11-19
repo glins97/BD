@@ -1,0 +1,3 @@
+-- Adicionar produtos
+-- Remover produto
+-- Atualizar produto
