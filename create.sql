@@ -16,7 +16,7 @@ CREATE TABLE subprodutos(
 
 CREATE TABLE materiais(
     material_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    descricao varchar(140) NOT NULL,
+    descricao varchar(140) NOT NULL
 );
 
 CREATE TABLE materiais_v_produtos(

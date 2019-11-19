@@ -8,8 +8,8 @@ VALUES
 -- Remover materiais de produtos
 DELETE 
 FROM materiais_v_produtos
-WHERE produto_id = -1 AND material_id = -1
+WHERE produto_id = -1 AND material_id = -1;
 
 -- Atualizar materiais de produtos
 UPDATE materiais_v_produtos
-SET qtd = -1
+SET qtd = -1;

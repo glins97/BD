@@ -19,6 +19,7 @@ files = [
     'insert_materiais.sql',
     'insert_materiais_v_produtos.sql',
     'insert_estoque.sql',
+    'manip_clientes.sql',
 ]
 
 for sql in files:
@@ -32,6 +33,7 @@ for sql in files:
             except Exception as e:
                 failed = True
                 print('[FAILED]::{}\n{}'.format(sql, e))
+                print(query)
         if not failed:
             print('[SUCCESS]::{}'.format(sql))
 
